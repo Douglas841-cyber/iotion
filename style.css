@@ -1,0 +1,199 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020; /* Fundo cinza escuro */
+    color: #fff; /* Branco */
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3a3a3a; /* Cinza escuro */
+    color: #fff;
+    padding: 5px 0;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+#home {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('conteiner.jpg'); /* Substitua 'sua-imagem.jpg' pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Efeito fosco */
+    z-index: 1;
+}
+
+#home .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    color: #007BFF; /* Azul claro */
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Serviços */
+#servicos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #3a3a3a; /* Cinza escuro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    color: #007BFF; /* Azul claro */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #fff; /* Branco */
+}
+
+/* Contato */
+#contato {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px; /* Diminuindo a largura do formulário */
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Títulos personalizados */
+#servicos h2,
+#sobre h2,
+#contato h2 {
+    color: #007BFF; /* Azul claro */
+    margin-bottom: 30px;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3a3a3a; /* Cinza escuro */
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}

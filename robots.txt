@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://douglas841-cyber.github.io/iotion/sitemap.xml
